@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 92" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente Metálico Real do Logotipo -->
+    <linearGradient id="metaGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0d0" />
+      <stop offset="25%" stop-color="#e2c8a2" />
+      <stop offset="50%" stop-color="#c5a67a" />
+      <stop offset="75%" stop-color="#f5e4c6" />
+      <stop offset="100%" stop-color="#936d39" />
+    </linearGradient>
+
+    <linearGradient id="metaGoldShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c5a67a" />
+      <stop offset="100%" stop-color="#644922" />
+    </linearGradient>
+
+    <filter id="logoGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Cinzel:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@700&amp;display=swap');
+    .logo-eta { font-family: 'Cinzel', Georgia, serif; font-size: 42px; font-weight: 700; letter-spacing: 5px; fill: url(#metaGoldGrad); }
+    .logo-modular { font-family: 'Alex Brush', cursive; font-size: 30px; fill: url(#metaGoldGrad); font-style: italic; }
+    .logo-tagline { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 6.8px; font-weight: 700; letter-spacing: 3.5px; fill: #d8be96; text-transform: uppercase; }
+  </style>
+
+  <g filter="url(#logoGlow)">
+    <!-- COMPASSO ESQUERDO DO 'M' -->
+    <g class="compass-1">
+      <!-- Cabeça redonda do compasso com anel -->
+      <circle cx="27" cy="14" r="6.5" fill="none" stroke="url(#metaGoldGrad)" stroke-width="2.2" />
+      <circle cx="27" cy="14" r="2.8" fill="url(#metaGoldGrad)" />
+      <!-- Articulação superior -->
+      <rect x="24.5" y="19.5" width="5" height="3.5" rx="0.8" fill="url(#metaGoldGrad)" />
+
+      <!-- Perna externa esquerda -->
+      <path d="M25 23 L9 58 L12.5 58 L27.5 23 Z" fill="url(#metaGoldGrad)" />
+      <polygon points="8.5,58 12,58 10,63" fill="url(#metaGoldGrad)" />
+      <!-- Ranhuras do compasso esquerdo -->
+      <line x1="16" y1="43" x2="20" y2="41" stroke="#6e5025" stroke-width="1" />
+      <line x1="17.5" y1="46" x2="21.5" y2="44" stroke="#6e5025" stroke-width="1" />
+
+      <!-- Perna interna direita (desce ao centro do M) -->
+      <path d="M28 23 L46.5 58 L43.5 58 L26 23 Z" fill="url(#metaGoldGrad)" />
+      
+      <!-- Haste transversal e parafuso de precisão -->
+      <line x1="18" y1="41" x2="36" y2="41" stroke="url(#metaGoldGrad)" stroke-width="1.2" />
+      <circle cx="27" cy="41" r="1.8" fill="url(#metaGoldShadow)" stroke="url(#metaGoldGrad)" stroke-width="0.8" />
+    </g>
+
+    <!-- COMPASSO DIREITO DO 'M' -->
+    <g class="compass-2">
+      <!-- Cabeça redonda do compasso direito -->
+      <circle cx="56" cy="14" r="6.5" fill="none" stroke="url(#metaGoldGrad)" stroke-width="2.2" />
+      <circle cx="56" cy="14" r="2.8" fill="url(#metaGoldGrad)" />
+      <!-- Articulação superior -->
+      <rect x="53.5" y="19.5" width="5" height="3.5" rx="0.8" fill="url(#metaGoldGrad)" />
+
+      <!-- Perna interna esquerda (encontra o compasso 1 no vértice inferior) -->
+      <path d="M54.5 23 L44 58 L47 58 L57 23 Z" fill="url(#metaGoldGrad)" />
+
+      <!-- Perna externa direita -->
+      <path d="M57.5 23 L73 58 L69.5 58 L55 23 Z" fill="url(#metaGoldGrad)" />
+      <polygon points="69.5,58 73,58 71.5,63" fill="url(#metaGoldGrad)" />
+      <!-- Ranhuras do compasso direito -->
+      <line x1="62" y1="41" x2="66" y2="43" stroke="#6e5025" stroke-width="1" />
+      <line x1="63.5" y1="44" x2="67.5" y2="46" stroke="#6e5025" stroke-width="1" />
+
+      <!-- Haste transversal e parafuso de precisão -->
+      <line x1="48" y1="41" x2="66" y2="41" stroke="url(#metaGoldGrad)" stroke-width="1.2" />
+      <circle cx="57" cy="41" r="1.8" fill="url(#metaGoldShadow)" stroke="url(#metaGoldGrad)" stroke-width="0.8" />
+    </g>
+
+    <!-- LETRAS 'ETA' EM SERIFA DOURADA -->
+    <text x="82" y="56" class="logo-eta">ETA</text>
+
+    <!-- PALAVRA 'Modular' EM CALIGRAFIA CURSIVA DOURADA -->
+    <text x="44" y="73" class="logo-modular">Modular</text>
+
+    <!-- SUBTÍTULO 'CONSTRUÇÃO RÁPIDA' -->
+    <text x="110" y="86" text-anchor="middle" class="logo-tagline">Construção Rápida</text>
+  </g>
+</svg>
